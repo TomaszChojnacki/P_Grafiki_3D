@@ -1,0 +1,63 @@
+--------------BLUEPRINTY----------------	--------------STATIC MESH---------------
+- BP_Player - postać gracza            -	- SM_Tree - drzewo                     -
+- BP_Enemy - przeciwnik                -	- SM_Rock - skała                      -
+- BP_Weapon - broń                     -	-                                      -
+----------------------------------------	----------------------------------------
+
+
+-------------SKELETAL MESH--------------	--------------MATERIAŁY-----------------
+- SK_Player - postać animowana         -	- M_Wood - materiał drewna             -
+- SK_Enemy - przeciwnik                -	- M_Metal - materiał metalu            -
+-                                      -	-                                      -
+-                                      -	- MI_Wood_Dark - instancja materiału   -
+-                                      -	- MI_Metal_Rusty - instancja materiału -
+----------------------------------------	----------------------------------------
+
+
+----------------TEKSTURY----------------	---------------ANIMACJE-----------------
+- T_Wood_D - Diffuse / Base Color      -	- AN_Run - animacja biegu              -
+- T_Wood_N - Normal Map                -	- AN_Idle - animacja bezczynności      -
+-                                      -	-                                      -
+-                                      -	- ABP_Player - Animation Blueprint     -
+----------------------------------------	----------------------------------------
+
+
+---------------DŹWIĘKI------------------	------------------UI--------------------
+- SFX_Explosion - efekt dźwiękowy      -	- WBP_HUD - główny HUD                 -
+- SFX_Gunshot - strzał                 -	- WBP_Menu - menu                      -
+- MUS_Background - muzyka              -	- WBP_Inventory - ekwipunek            -
+----------------------------------------	----------------------------------------
+
+
+-------------PARTICLE / VFX-------------	--------------LEVEL / MAPY--------------
+- P_Explosion - efekt eksplozji        -	- L_MainMenu - mapa menu               -
+- P_Smoke - dym                        -	- L_Level01 - poziom 1                 -
+----------------------------------------	----------------------------------------
+
+
+-------DATA ASSETS / DATA TABLES--------	-----------ENUMY / STRUKTURY------------
+- DA_Items - Data Asset                -	- E_WeaponType - enum typów broni      -
+- DT_Weapons - Data Table              -	- E_GameState - enum stanu gry         -
+-                                      -	-                                      -
+-                                      -	- ST_PlayerStats - struktura danych    -
+----------------------------------------	----------------------------------------
+
+
+--------------KOMPONENTY----------------	----------------INPUT-------------------
+- AC_Inventory - komponent ekwipunku   -	- IA_Jump - Input Action               -
+- AC_Health - komponent zdrowia        -	- IA_Shoot - Input Action              -
+-                                      -	- IMC_Player - Input Mapping Context   -
+----------------------------------------	----------------------------------------
+
+
+---------------NIAGARA------------------	----------MATERIAŁY POST PROCESS--------
+- NS_Explosion - Niagara System        -	- PP_MotionBlur - efekt post-process   -
+- NI_Smoke - Niagara Emitter           -	-                                      -
+----------------------------------------	----------------------------------------
+
+
+-----------------AI---------------------
+- BT_Enemy - Behavior Tree             -
+- BB_Enemy - Blackboard                -
+----------------------------------------
+
